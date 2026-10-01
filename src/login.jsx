@@ -16,7 +16,7 @@ function Login() {
     setSuccess('');
     setLoading(true);
 
-    fetch('http://127.0.0.1:8000/login/', {
+    fetch('https://uzmart-tz4u.onrender.com/login/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, password })

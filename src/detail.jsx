@@ -8,7 +8,7 @@ function Detail() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/product/${id}/`)
+    fetch(`https://uzmart-tz4u.onrender.com/${id}/`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);

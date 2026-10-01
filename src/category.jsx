@@ -7,7 +7,7 @@ function Category() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/product/?category=${id}`)
+    fetch(`https://uzmart-tz4u.onrender.com/product/?category=${id}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error('Serverda xatolik yuz berdi!');
@@ -44,7 +44,7 @@ function Category() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[24px]">
             {products.map((product) => {
               const imageUrl = product.rasm
-                ? (product.rasm.startsWith('http') ? product.rasm : `http://127.0.0.1:8000${product.rasm}`)
+                ? (product.rasm.startsWith('http') ? product.rasm : `https://uzmart-tz4u.onrender.com${product.rasm}`)
                 : 'https://images.uzum.uz/cupefjs5j42bjc4eq1rg/t_product_540_high.jpg';
 
               return (
