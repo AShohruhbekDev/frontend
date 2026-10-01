@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App.jsx';
-import Detail from './Detail.jsx';
+import Detail from './detail.jsx';
 import './index.css';
 import Register from './register.jsx';
 import Login from './login.jsx'
